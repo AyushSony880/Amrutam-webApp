@@ -1,0 +1,46 @@
+import { Link, Links } from "react-router-dom";
+import icon1 from "../assets/icon1.svg";
+import icon2 from "../assets/icon2.svg";
+import icon3 from "../assets/icon3.svg";
+import icon4 from "../assets/icon4.svg";
+import icon5 from "../assets/icon5.svg";
+const SocialMedia = () => {
+  const allIcon = [
+    {
+      link: "https://www.linkedin.com/in/ayush-880-link/",
+      icon: icon1,
+    },
+    {
+      link: "https://www.linkedin.com/in/ayush-880-link/",
+      icon: icon2,
+    },
+    {
+      link: "https://www.linkedin.com/in/ayush-880-link/",
+      icon: icon3,
+    },
+    {
+      link: "https://www.linkedin.com/in/ayush-880-link/",
+      icon: icon4,
+    },
+    {
+      link: "https://www.linkedin.com/in/ayush-880-link/",
+      icon: icon5,
+    },
+  ];
+  return (
+    <div className="flex items-center gap-x-5">
+      {allIcon.map((list) => (
+        <Link target="_blank" to={list.link}>
+          <img
+            className="w-9 h-9 object-center "
+            src={list.icon}
+            alt=""
+            srcset=""
+          />
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+export default SocialMedia;
