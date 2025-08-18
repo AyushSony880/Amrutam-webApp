@@ -2,7 +2,7 @@ import { FaUserDoctor } from "react-icons/fa6";
 
 const TopStrip = () => {
   return (
-    <div className="flex fixed top-0  items-center justify-end px-28 gap-x-20 bg-[#373636] w-full h-16 ">
+    <div className="flex z-50 fixed top-0  items-center justify-end px-28 gap-x-20 bg-[#373636] w-full h-16 ">
       <p className="text-[#D9D9D9] font-medium text-[20px]">
         Register Yourself As An Amrutam Doctor
       </p>

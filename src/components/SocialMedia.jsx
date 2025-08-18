@@ -29,13 +29,11 @@ const SocialMedia = () => {
   ];
   return (
     <div className="flex items-center gap-x-5">
-      {allIcon.map((list) => (
-        <Link target="_blank" to={list.link}>
+      {allIcon.map((list,i) => (
+        <Link key={i} target="_blank" to={list.link}>
           <img
             className="w-9 h-9 object-center "
             src={list.icon}
-            alt=""
-            srcset=""
           />
         </Link>
       ))}

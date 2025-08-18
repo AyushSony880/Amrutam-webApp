@@ -4,6 +4,7 @@ import TrustHolders from "../components/TrustHolders";
 import MainContent from "../components/MainContent";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import JoinCircle from "../components/JoinCircle";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <TrustHolders />
       <MainContent />
+      <JoinCircle />
       <Footer />
     </section>
   );

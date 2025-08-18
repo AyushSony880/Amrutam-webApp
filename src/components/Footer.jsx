@@ -24,8 +24,6 @@ const Footer = () => {
           <img
             className="object-left object-contain   "
             src={footerLogo}
-            alt=""
-            srcset=""
           />
         </figure>
         <FooterInfoList title={"Get in touch"} arrayList={getInTouch} />
