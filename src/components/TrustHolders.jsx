@@ -1,12 +1,12 @@
-import image1 from "../assets/image1.svg";
-import image2 from "../assets/image2.svg";
-import image3 from "../assets/image3.svg";
-import image4 from "../assets/image4.svg";
-import image5 from "../assets/image5.svg";
-import image6 from "../assets/image6.svg";
-import image7 from "../assets/image7.svg";
-import image8 from "../assets/image8.svg";
-import image9 from "../assets/image9.svg";
+import image1 from "../assets/trustHoldersImage/image1.svg";
+import image2 from "../assets/trustHoldersImage/image2.svg";
+import image3 from "../assets/trustHoldersImage/image3.svg";
+import image4 from "../assets/trustHoldersImage/image4.svg";
+import image5 from "../assets/trustHoldersImage/image5.svg";
+import image6 from "../assets/trustHoldersImage/image6.svg";
+import image7 from "../assets/trustHoldersImage/image7.svg";
+import image8 from "../assets/trustHoldersImage/image8.svg";
+import image9 from "../assets/trustHoldersImage/image9.svg";
 import Title from "./Title";
 
 const TrustHolders = () => {
