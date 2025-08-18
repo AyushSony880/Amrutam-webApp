@@ -58,6 +58,7 @@ const JoinCircle = () => {
             <img
               src={data.image}
               alt=""
+              key={i}
               className={`absolute top-0 right-0-0 w-full h-full object-contain  rounded-lg transition-opacity duration-700 ease-in-out ${
                 boxImage === data.image ? "opacity-100" : "opacity-0"
               }`}
