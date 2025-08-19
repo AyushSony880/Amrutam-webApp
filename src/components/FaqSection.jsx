@@ -45,7 +45,7 @@ const FaqSection = () => {
     },
   ];
   return (
-    <section className="py-8 px-52">
+    <section className="py-8 flex flex-col items-center justify-between  px-52">
       <Title
         title={"Frequently Asked Questions"}
         text={
@@ -53,19 +53,21 @@ const FaqSection = () => {
         }
         boxWidth="820"
       />
-      {faqQuestion.map(({ id, question, answer }) => (
-        <FaqQuestion
-              id={id}
-              key={id}
-          question={question}
-          answer={answer}
-          setShowAns={setShowAns}
-          showAns={showAns}
-          opendTab={opendTab}
-              setOpendTab={setOpendTab}
-              icon={["+","-"]}
-        />
-      ))}
+      <div className=" mt-6">
+        {faqQuestion.map(({ id, question, answer }) => (
+          <FaqQuestion
+            id={id}
+            key={id}
+            question={question}
+            answer={answer}
+            setShowAns={setShowAns}
+            showAns={showAns}
+            opendTab={opendTab}
+            setOpendTab={setOpendTab}
+            icon={["+", "-"]}
+          />
+        ))}
+      </div>
     </section>
   );
 };
