@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import JoinCircle from "../components/JoinCircle";
 import Consultation from "../components/Consultation";
 import Testimonials from "../components/Testimonials";
+import FaqSection from "../components/FaqSection";
 
 const Home = () => {
   return (
@@ -17,7 +18,8 @@ const Home = () => {
       <MainContent />
       <JoinCircle />
       <Consultation />
-      <Testimonials/>
+      <Testimonials />
+      <FaqSection/>
       <Footer />
     </section>
   );
