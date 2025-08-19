@@ -10,11 +10,10 @@ import iphone8 from "../assets/ConsultationsImage/iphone8.png";
 import iphone9 from "../assets/ConsultationsImage/iphone9.png";
 import Button2 from "./Button2";
 import IphoneCard from "./IphoneCard";
+import Button1 from "./Button1";
 
 const Consultation = () => {
   const [tab, setTab] = useState("Consultations");
-
- 
 
   const dataMap = {
     Consultations: [
@@ -39,19 +38,19 @@ const Consultation = () => {
     <section className="flex flex-col items-center justify-around">
       <div className="flex gap-x-9">
         <Button2
-          isActive={tab==="Consultations"}
+          isActive={tab === "Consultations"}
           tabFn={() => setTab("Consultations")}
           text={"Consultations"}
           BtnWidth={156}
         />
         <Button2
-          isActive={tab==="Payment"}
+          isActive={tab === "Payment"}
           tabFn={() => setTab("Payment")}
           text={"Payment withdrawal"}
           BtnWidth={219}
         />
         <Button2
-          isActive={tab==="Schedule"}
+          isActive={tab === "Schedule"}
           tabFn={() => setTab("Schedule")}
           text={"Schedule"}
           BtnWidth={115}
@@ -62,6 +61,7 @@ const Consultation = () => {
           <IphoneCard key={i} title={data.title} index={i} image={data.image} />
         ))}
       </div>
+      <Button1 BtnWidth="161" text={"Join Now"} />
     </section>
   );
 };

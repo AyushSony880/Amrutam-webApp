@@ -1,7 +1,6 @@
 import React from "react";
 
 const IphoneCard = ({ index, title, image }) => {
-  console.log(image)
   return (
     <div className={`flex flex-col  p-5`}>
       <h3
