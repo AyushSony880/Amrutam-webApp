@@ -1,4 +1,5 @@
 import heroImg from "../assets/hero.svg";
+import Button1 from "./Button1";
 
 const Hero = () => {
   return (
@@ -15,9 +16,7 @@ const Hero = () => {
           Connect with more patients, set your own schedule, and grow your
           Ayurvedic practice effortlessly.
         </p>
-        <button className="bg-[#3A643C] text-[#FFFFFF] rounded-xl text-xl py-3.5 mt-10 font-bold w-[260px]">
-          Join Now
-        </button>
+        <Button1 text={"Join Now"} BtnWidth={"260"} / >
         <div className="w-64 flex items-center justify-between mt-12">
           <div className=" text-center w-[99px]">
             <p className="text-2xl  font-semibold">500+</p>

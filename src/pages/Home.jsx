@@ -5,6 +5,7 @@ import MainContent from "../components/MainContent";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import JoinCircle from "../components/JoinCircle";
+import Consultation from "../components/Consultation";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <TrustHolders />
       <MainContent />
       <JoinCircle />
+      <Consultation />
       <Footer />
     </section>
   );
