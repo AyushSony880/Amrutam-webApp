@@ -1,9 +1,9 @@
 import Title from "./Title";
-import group1 from "../assets/mainContentImage/Group1.svg";
+import group1 from "../assets/mainContentImage/Group1.png";
 import group2 from "../assets/mainContentImage/Group2.svg";
-import group3 from "../assets/mainContentImage/Group3.svg";
+import group3 from "../assets/mainContentImage/Group3.png";
 import group4 from "../assets/mainContentImage/Group4.svg";
-import group5 from "../assets/mainContentImage/Group5.svg";
+import group5 from "../assets/mainContentImage/Group5.png";
 import FeatureCard from "./FeatureCard";
 
 const featureData = [

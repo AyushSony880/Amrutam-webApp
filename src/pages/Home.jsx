@@ -8,6 +8,8 @@ import JoinCircle from "../components/JoinCircle";
 import Consultation from "../components/Consultation";
 import Testimonials from "../components/Testimonials";
 import FaqSection from "../components/FaqSection";
+import AppDownload from "../components/AppDownload";
+import LetsConnect from "../components/LetsConnect";
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <Consultation />
       <Testimonials />
       <FaqSection/>
+      <AppDownload />
+      <LetsConnect/>
       <Footer />
     </section>
   );

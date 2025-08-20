@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Title from "./Title";
 import FaqQuestion from "./FaqQuestion";
+import Button1 from "./Button1";
 
 const FaqSection = () => {
   const [showAns, setShowAns] = useState(false);
@@ -68,6 +69,7 @@ const FaqSection = () => {
           />
         ))}
       </div>
+      <Button1 text={"See More"} BtnWidth={163}/>
     </section>
   );
 };
