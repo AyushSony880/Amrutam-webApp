@@ -38,33 +38,34 @@ const JoinCircle = () => {
         text={"Becoming a part of Amrutam is simple"}
         boxWidth="449"
       />
-      <div className="flex px-20  items-center justify-around">
-        <aside className=" w-[580px] py-20">
-          {joinCircleDAta.map((data, i) => (
-            <div
-              onMouseEnter={() => setBoxImage(data.image)}
-              onMouseLeave={() => setBoxImage(joinImage1)}
-              key={i}
-              className="h-[110px] mt-5 hover:text-[#FFF7E2] text-[#3A643C] w-[578px] px-8 py-7 border border-[#33643F80] rounded-lg cursor-pointer duration-700 ease-in-out hover:bg-[#3A643C]"
-            >
-              <h3 className="text-xl font-bold">{data.title}</h3>
-              <p className="font-normal text-[14px]">{data.text}</p>
-            </div>
-          ))}
-        </aside>
-
-        <figure className="relative w-[645px] h-[540px]">
+      <div className="flex flex-col md:flex-row px-5 sm:px-10 mt-3 lg:px-20 items-center justify-between gap-6 md:gap-10">
+        <figure className="relative w-full md:max-w-[645px] h-[220px] sm:h-[300px] md:h-[540px] order-1 md:order-2">
           {joinCircleDAta.map((data, i) => (
             <img
               src={data.image}
               alt=""
               key={i}
-              className={`absolute top-0 right-0-0 w-full h-full object-contain  rounded-lg transition-opacity duration-700 ease-in-out ${
+              className={`absolute top-0 right-0 w-full h-full object-contain rounded-lg transition-opacity duration-700 ease-in-out ${
                 boxImage === data.image ? "opacity-100" : "opacity-0"
               }`}
             />
           ))}
         </figure>
+        <aside className="w-full md:max-w-[580px] py-6 md:py-16 order-2 md:order-1">
+          {joinCircleDAta.map((data, i) => (
+            <div
+              onMouseEnter={() => setBoxImage(data.image)}
+              onMouseLeave={() => setBoxImage(joinImage1)}
+              key={i}
+              className="mt-3 sm:mt-5 hover:text-[#FFF7E2] text-[#3A643C] w-full px-5 sm:px-8 py-4 sm:py-5 border border-[#33643F80] rounded-lg cursor-pointer duration-700 ease-in-out hover:bg-[#3A643C]"
+            >
+              <h3 className="text-base sm:text-lg md:text-xl font-bold">
+                {data.title}
+              </h3>
+              <p className="font-normal text-sm sm:text-[14px]">{data.text}</p>
+            </div>
+          ))}
+        </aside>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 const Title = ({ title, text, boxWidth = "785" }) => {
   return (
-    <div className={`w-[${boxWidth}px] mx-auto   text-center `}>
+    <div className={`w-[${boxWidth}px] mx-auto pb-5  text-center `}>
       <h2 className="text-[#33643F] text-xl sm:text-2xl lg:text-[40px] font-bold">
         {title}{" "}
       </h2>

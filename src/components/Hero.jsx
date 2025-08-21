@@ -3,7 +3,7 @@ import Button1 from "./Button1";
 
 const Hero = () => {
   return (
-    <section className="relative sm:static bg-gradient-to-r from-[#ffeec4] to-[#fff6de] w-full lg:h-auto   md:h-[calc(100vh-110px)] flex flex-col md:flex-row items-center  md:items-start lg:items-center justify-around px-3 sm:px-7 lg:px-20  py-10">
+    <section className="relative sm:static bg-gradient-to-r from-[#ffeec4] to-[#fff6de] w-full lg:h-auto   lh-[calc(100vh-110px)] flex flex-col md:flex-row items-center  md:items-start lg:items-center justify-around px-3 sm:px-7 lg:px-20  py-10">
       <aside className=" py-5 md:py-0  md:max-w-1/2  lg:mt-10 order-2 md:order-none">
         <p className="absolute sm:static top-3 left-5 text-[#666666] text-[16px] font-medium ">
           Namaste, Welcome to Amrutam

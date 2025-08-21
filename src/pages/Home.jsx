@@ -19,12 +19,12 @@ const Home = () => {
       <TrustHolders />
       <MainContent />
       <JoinCircle />
-      <Consultation />
+      {/* <Consultation />
       <Testimonials />
       <FaqSection />
       <AppDownload />
       <LetsConnect />
-      <Footer />
+      <Footer /> */}
     </section>
   );
 };
