@@ -22,7 +22,7 @@ const TrustHolders = () => {
     image9,
   ];
   return (
-    <section className="bg-[#FFF8E6] h-[294px] flex flex-col items-center justify-around">
+    <section className="bg-[#FFF8E6] p-2 md:h-[200px] lg:h-[294px] flex flex-col items-center justify-around">
       <Title
         title={"Featured"}
         text={
@@ -30,12 +30,12 @@ const TrustHolders = () => {
         }
         boxWidth="785"
       />
-      <div className="w-full px-10 h-24 flex items-center justify-around">
+      <div className="w-full py-1 px-1 md:px-10 md:h-24 flex items-center justify-around">
         {trustHoldersImage &&
           trustHoldersImage.map((img, i) => (
             <img
               key={i}
-              className="  max-w-[148px] object-center "
+              className=" w-7  sm:w-10 md:w-16 object-center "
               src={img}
               alt="trust-holders-image"
             />

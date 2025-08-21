@@ -1,7 +1,5 @@
 import { useState } from "react";
 import letsConnectImage from "../assets/letsConnectImage.svg";
-import Button1 from "./Button1";
-import Button2 from "./Button2";
 import Title from "./Title";
 
 const LetsConnect = () => {

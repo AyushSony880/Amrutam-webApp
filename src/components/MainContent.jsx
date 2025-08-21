@@ -36,7 +36,7 @@ const featureData = [
 
 const MainContent = () => {
   return (
-    <section className="py-9 ">
+    <section className=" px-3 sm:py-5 py-3 lg:py-9 ">
       <Title
         title={"Why Doctors Choose Us?"}
         text={

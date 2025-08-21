@@ -13,7 +13,7 @@ import LetsConnect from "../components/LetsConnect";
 
 const Home = () => {
   return (
-    <section className="bg-[#FFF7E2]">
+    <section className="bg-[#FFF7E2] flex flex-col">
       <Header />
       <Hero />
       <TrustHolders />
@@ -21,9 +21,9 @@ const Home = () => {
       <JoinCircle />
       <Consultation />
       <Testimonials />
-      <FaqSection/>
+      <FaqSection />
       <AppDownload />
-      <LetsConnect/>
+      <LetsConnect />
       <Footer />
     </section>
   );
