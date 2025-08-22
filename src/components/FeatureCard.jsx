@@ -4,7 +4,7 @@ const FeatureCard = ({ image, title, text, index }) => {
   return (
     <div className="flex w-full mb-10 sm:mb-5 gap-2 flex-col sm:flex-row  items-center justify-between md:justify-around my-7 mt-2 ">
       <figure
-        className={`  w-[80%] sm:w-[70%]  px-2 md:p-10 md:max-w-[50%] lg:max-w-[40%] ${
+        className={`  w-[80%] sm:w-[70%]  px-2 md:p-10 md:max-w-[550px] lg:max-w-[40%] ${
           index % 2 === 0 ? "sm:order-1 order-none self-start sm:self-auto " : "sm:order-2 order-none self-end sm:self-auto "
         }  `}
       >

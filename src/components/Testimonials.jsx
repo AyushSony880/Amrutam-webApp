@@ -31,7 +31,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <section className="py-8 px-24 mt-10">
+    <section className="py-8 px-5 xl:px-24 mt-10">
       <Title
         title={"What other Ayurvedic Doctors are Saying"}
         text={
@@ -39,7 +39,7 @@ const Testimonials = () => {
         }
         boxWidth="808"
       />
-      <div className="flex items-center gap-x-5 justify-center mt-16 ">
+      <div className="flex items-center flex-wrap gap-5 justify-center mt-16 ">
         {testimonialData.map(
           ({ name, image, role, rating, text, isCardSmall },i) => (
                 <TestimonialCard

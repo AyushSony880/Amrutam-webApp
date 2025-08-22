@@ -10,41 +10,52 @@ const TestimonialCard = ({
 }) => {
   return (
     <div
-      className={`bg-[#FFEEC3]  rounded-lg ${
-        isCardSmall ? "w-[347px] h-[190px] p-4" : "w-[480px] h-[283px] p-6"
-      }`}
+      className={`bg-[#FFEEC3] rounded-xl shadow-sm
+  ${
+    isCardSmall
+      ? "w-[clamp(260px,92vw,360px)] p-4"
+      : "w-[clamp(300px,92vw,480px)] p-6"
+  }`}
     >
-      <div className="flex items-center gap-4">
+      <div className="flex items-start gap-3 sm:gap-4">
         <img
           src={image}
-          className={`${
-            isCardSmall ? "w-11 h-11" : "w-12 h-12"
-          } rounded-full object-cover`}
+          alt={name}
+          className="size-10 sm:size-11 md:size-12 2xl:size-14 rounded-full object-cover shrink-0"
         />
-        <div>
+
+        <div className="min-w-0">
           <h3
-            className={`${
-              isCardSmall ? "font-semibold text-sm" : "font-bold text-lg"
-            }`}
+            className={`leading-tight
+        ${
+          isCardSmall
+            ? "text-sm sm:text-base font-semibold"
+            : "text-sm md:text-base lg:text-lg font-semibold 2xl:font-bold"
+        }`}
           >
-            {name},<span className="text-[#7E7E7E] font-normal  ">{role}</span>
+            {name}
+            <span className="text-[#7E7E7E] font-normal">, {role}</span>
           </h3>
-          <div className="flex items-center gap-x-1 mt-3 ">
-            {Array.from({ length: 5 }).map((_, index) => (
+
+          <div className="flex items-center gap-x-1 mt-2 sm:mt-3">
+            {Array.from({ length: 5 }).map((_, i) => (
               <IoStar
-                key={index}
-                className={`${
-                  index < rating ? "text-yellow-500" : "text-gray-300"
-                } ${isCardSmall ? "text-[12px]" : "text-[18px]"}`}
+                key={i}
+                className={`${i < rating ? "text-yellow-500" : "text-gray-300"}
+            ${
+              isCardSmall
+                ? "text-[12px] sm:text-[14px]"
+                : "text-[12px] sm:text-[14px] md:text-[16px] 2xl:text-[18px]"
+            }`}
               />
             ))}
           </div>
         </div>
       </div>
+
       <p
-        className={` text-[#7E7E7E] ${
-          isCardSmall ? "text-xs mt-6" : "text-[16px] mt-10"
-        }`}
+        className={`text-[#7E7E7E] mt-4 sm:mt-6
+    ${isCardSmall ? "text-xs sm:text-sm" : "text-xs sm:text-sm md:text-base"}`}
       >
         {text}
       </p>
