@@ -19,8 +19,8 @@ const Home = () => {
       <TrustHolders />
       <MainContent />
       <JoinCircle />
-      {/* <Consultation />
-      <Testimonials />
+       <Consultation />
+     {/* <Testimonials />
       <FaqSection />
       <AppDownload />
       <LetsConnect />

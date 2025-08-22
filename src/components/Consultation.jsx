@@ -36,7 +36,7 @@ const Consultation = () => {
   const loopingArr = dataMap[tab] || [];
   return (
     <section className="flex flex-col items-center justify-around">
-      <div className="flex gap-x-9">
+      <div className="flex w-full px-2 sm:w-[80%] lg:w-[50%] justify-around gap-1">
         <Button2
           isActive={tab === "Consultations"}
           tabFn={() => setTab("Consultations")}
@@ -56,7 +56,7 @@ const Consultation = () => {
           BtnWidth={115}
         />
       </div>
-      <div className=" flex w-[1240px]  justify-around p-8 ">
+      <div className=" flex max-w-[90%]  w-full  justify-around p-8 ">
         {loopingArr.map((data, i) => (
           <IphoneCard key={i} title={data.title} index={i} image={data.image} />
         ))}

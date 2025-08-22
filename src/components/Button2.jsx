@@ -5,11 +5,10 @@ const Button2 = ({ text, BtnWidth, tabFn, isActive }) => {
     <button
       onClick={tabFn}
       className={` ${
-        
         isActive
           ? "text-[#FFFFFF] bg-[#3A643C] "
           : "bg-[#FFF7E2] text-[#3A643C]"
-      } border border-[#3A643C]  text-center  cursor-pointer  rounded-xl text-xl py-3 px-4 mt-10 font-normal w-[${BtnWidth}px]`}
+      } border border-[#3A643C]  text-center  cursor-pointer  rounded-xl px-2 text-sm sm:text-lg md:text-xl  py-2 md:py-3 md:px-4 mt-10 font-normal max-w-[${BtnWidth}px]`}
     >
       {text}
     </button>
