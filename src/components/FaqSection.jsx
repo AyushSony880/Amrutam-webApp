@@ -4,7 +4,7 @@ import Title from "./Title";
 
 const FaqSection = () => {
   return (
-    <section>
+    <section className="flex flex-col mb-5 md:mb-24 justify-center items-center">
       <FaqQuestions icons={["+", "-"]} />
       <Title
         title={"Frequently Asked Questions"}
