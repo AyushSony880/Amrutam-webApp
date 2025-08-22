@@ -22,9 +22,9 @@ const Home = () => {
       <Consultation />
       <Testimonials />
       <FaqSection />
-      {/* <AppDownload />
+       {/* <AppDownload /> */}
       <LetsConnect />
-      <Footer /> */}
+      {/* <Footer />  */}
     </section>
   );
 };
