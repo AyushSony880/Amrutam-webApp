@@ -24,7 +24,7 @@ const Home = () => {
       <FaqSection />
        {/* <AppDownload /> */}
       <LetsConnect />
-      {/* <Footer />  */}
+      <Footer /> 
     </section>
   );
 };
