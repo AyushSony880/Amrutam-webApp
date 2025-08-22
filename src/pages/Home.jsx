@@ -19,10 +19,10 @@ const Home = () => {
       <TrustHolders />
       <MainContent />
       <JoinCircle />
-       <Consultation />
-     <Testimonials />
-      {/* <FaqSection />
-      <AppDownload />
+      <Consultation />
+      <Testimonials />
+      <FaqSection />
+      {/* <AppDownload />
       <LetsConnect />
       <Footer /> */}
     </section>

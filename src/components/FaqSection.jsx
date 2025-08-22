@@ -46,7 +46,7 @@ const FaqSection = () => {
     },
   ];
   return (
-    <section className="py-8 flex flex-col items-center justify-between  px-52">
+    <section className="py-8 flex px-2 flex-col items-center justify-between  lg:px-52">
       <Title
         title={"Frequently Asked Questions"}
         text={
