@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const FaqQuestion = ({
   setShowAns,
@@ -8,7 +8,7 @@ const FaqQuestion = ({
   id,
   question,
   answer,
-  icon,
+  icons,
 }) => {
   return (
     <div
@@ -25,7 +25,7 @@ const FaqQuestion = ({
       >
         <h3 className=" w-[clamp(300px,70vw,320px)] sm:w-full">{question}</h3>
         <span className="text-xl  inline-block sm:text-2xl font-light absolute right-3 sm:right-5 top-3">
-          {showAns && opendTab === id ? icon[1] : icon[0]}
+          {showAns && opendTab === id ? icons[1] : icons[0]}
         </span>
       </div>
       <p

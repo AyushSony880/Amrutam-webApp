@@ -1,23 +1,19 @@
-import iphoneWithDoctor from "../assets/homePageAssets/downloadLinkImage/IphoneWithDoctor.svg";
-import forum from "../assets/homePageAssets/downloadLinkImage/Forum.svg";
-import call from "../assets/homePageAssets/downloadLinkImage/call.svg";
-import earn from "../assets/homePageAssets/downloadLinkImage/Earn.svg";
-import wallet from "../assets/homePageAssets/downloadLinkImage/wallet.svg";
-import AppStore from "../assets/homePageAssets/downloadLinkImage/AppStore.svg";
-import GooglePlay from "../assets/homePageAssets/downloadLinkImage/GooglePlay.svg";
-import DownloadFeatureCard from "./DownloadFeatureCard";
+import faqChatIcon from "../../assets/faqPageAssets/faqchatIcon.svg";
+import faqDownloadImage from "../../assets/faqPageAssets/faqDownloadImage.png";
+import AppStore from "../../assets/homePageAssets/downloadLinkImage/AppStore.svg";
+import GooglePlay from "../../assets/homePageAssets/downloadLinkImage/GooglePlay.svg";
+import DownloadFeatureCard from "../DownloadFeatureCard";
 
-
-const AppDownload = () => {
+const AppDownload2 = () => {
   const featureCardData = [
-    { image: forum, text: "Build Trust and Community with Forum" },
-    { image: wallet, text: "Instant Access to Your Earnings with Wallet" },
-    { image: call, text: "Attract Patients with 5-Minute Free Call" },
-    { image: earn, text: "Earn More with Pay Per Conversation" },
+    { image: faqChatIcon, text: "Access to Prescriptions" },
+    { image: faqChatIcon, text: "Track health efficiently" },
+    { image: faqChatIcon, text: "Direct Chat with Doctors" },
+    { image: faqChatIcon, text: "In-app reminders for consultations" },
   ];
 
   return (
-    <section className="w-full bg-[#FFEDBF] py-10 sm:py-16 lg:py-20">
+    <section className="w-full bg-[#FFF7E2] mt-20 py-10 sm:py-16 lg:py-20">
       <div className="container  mx-auto flex flex-col  lg:flex-row items-center justify-between px-6 sm:px-10 lg:px-20 gap-10 relative">
         <div className="w-full order-2 min-[1024px]:order-1 lg:w-1/2 flex flex-col items-start">
           <h2 className="text-[#33643F] mb-5 text-2xl sm:text-3xl lg:text-[40px] font-bold max-w-[90%]">
@@ -39,7 +35,7 @@ const AppDownload = () => {
         </div>
         <article className="w-full order-1 min-[1024px]:order-2 xl:absolute right-0 bottom-[-100px]  lg:w-1/2 flex justify-center ">
           <img
-            src={iphoneWithDoctor}
+            src={faqDownloadImage}
             alt="Doctor iPhone"
             className="w-[80%] sm:w-[70%] lg:w-[671px] lg:h-[715px] object-contain"
           />
@@ -49,4 +45,4 @@ const AppDownload = () => {
   );
 };
 
-export default AppDownload;
+export default AppDownload2;

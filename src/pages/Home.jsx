@@ -10,10 +10,11 @@ import Testimonials from "../components/Testimonials";
 import FaqSection from "../components/FaqSection";
 import AppDownload from "../components/AppDownload";
 import LetsConnect from "../components/LetsConnect";
+import Title from "../components/Title";
 
 const Home = () => {
   return (
-    <section className="bg-[#FFF7E2] flex flex-col">
+    <div className="bg-[#FFF7E2] flex flex-col">
       <Header />
       <Hero />
       <TrustHolders />
@@ -21,11 +22,11 @@ const Home = () => {
       <JoinCircle />
       <Consultation />
       <Testimonials />
-      <FaqSection />
-       <AppDownload />
+      <FaqSection/>
+     <AppDownload />
       <LetsConnect />
-      <Footer /> 
-    </section>
+      <Footer />
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import footerLogo from "../assets/footerImage/footerLogo.svg";
+import footerLogo from "../assets/homePageAssets/footerImage/footerLogo.svg";
 import FooterInfoList from "./FooterInfoList";
 import SocialMedia from "./SocialMedia";
 

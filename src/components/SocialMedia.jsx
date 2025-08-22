@@ -1,8 +1,8 @@
-import icon1 from "../assets/footerImage/icon1.svg";
-import icon2 from "../assets/footerImage/icon2.svg";
-import icon3 from "../assets/footerImage/icon3.svg";
-import icon4 from "../assets/footerImage/icon4.svg";
-import icon5 from "../assets/footerImage/icon5.svg";
+import icon1 from "../assets/homePageAssets/footerImage/icon1.svg";
+import icon2 from "../assets/homePageAssets/footerImage/icon2.svg";
+import icon3 from "../assets/homePageAssets/footerImage/icon3.svg";
+import icon4 from "../assets/homePageAssets/footerImage/icon4.svg";
+import icon5 from "../assets/homePageAssets/footerImage/icon5.svg";
 
 const SocialMedia = () => {
   const allIcon = [
@@ -14,13 +14,12 @@ const SocialMedia = () => {
   ];
 
   return (
-    <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+    <div className="flex flex-wrap items-center min-w-[300px] justify-center gap-2 sm:gap-3 lg:gap-5">
       {allIcon.map((list, i) => (
         <a
           key={i}
           href={list.link}
           target="_blank"
-          rel="noopener noreferrer"
         >
           <img
             className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 object-center"

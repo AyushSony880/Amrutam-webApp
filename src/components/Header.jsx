@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className=" shadow-2xl">
       <TopStrip />
-      <NavBar />
+      <NavBar cssValue={"mt-9 sm:mt-12 md:mt-16"} />
     </header>
   );
 };

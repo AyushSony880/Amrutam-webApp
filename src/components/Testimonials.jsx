@@ -1,4 +1,4 @@
-import testimonialImage from "../assets/testimonialImage.svg";
+import testimonialImage from "../assets/homePageAssets/testimonialImage.svg";
 
 import Title from "./Title";
 import TestimonialCard from "./TestimonialCard";
@@ -41,9 +41,9 @@ const Testimonials = () => {
       />
       <div className="flex items-center flex-wrap gap-5 justify-center mt-16 ">
         {testimonialData.map(
-          ({ name, image, role, rating, text, isCardSmall },i) => (
-                <TestimonialCard
-                    key={i}
+          ({ name, image, role, rating, text, isCardSmall }, i) => (
+            <TestimonialCard
+              key={i}
               image={image}
               name={name}
               role={role}

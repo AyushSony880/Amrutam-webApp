@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Title from "./Title";
-import joinImage1 from "../assets/joinCircleImage/joinImage1.png";
-import joinImage2 from "../assets/joinCircleImage/joinImage2.png";
-import joinImage3 from "../assets/joinCircleImage/joinImage3.png";
-import joinImage4 from "../assets/joinCircleImage/joinImage4.png";
+import joinImage1 from "../assets/homePageAssets/joinCircleImage/joinImage1.png";
+import joinImage2 from "../assets/homePageAssets/joinCircleImage/joinImage2.png";
+import joinImage3 from "../assets/homePageAssets/joinCircleImage/joinImage3.png";
+import joinImage4 from "../assets/homePageAssets/joinCircleImage/joinImage4.png";
 
 const JoinCircle = () => {
   const joinCircleDAta = [
