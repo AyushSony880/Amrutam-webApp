@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#DBDCC4] w-full px-6 sm:px-12 lg:px-24 py-10 sm:py-16 flex flex-col lg:flex-row items-start justify-between lg:gap-10">
+    <footer className="bg-[#DBDCC4] w-full px-6 sm:px-12 lg:px-24 py-10 sm:py-16 flex flex-col lg:flex-row items-start justify-between ">
       <div className="flex flex-col items-start gap-6 lg:gap-0 lg:justify-between h-auto lg:h-full">
         <figure className="h-[37px]">
           <img
